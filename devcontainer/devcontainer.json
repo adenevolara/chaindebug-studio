@@ -1,0 +1,16 @@
+{
+    "name": "ChainDebug Dev",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "workspaceFolder": "/app",
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+      "ms-python.python",
+      "eamodio.gitlens"
+    ],
+    "postCreateCommand": "pip install -e .[dev]"
+  }
+  

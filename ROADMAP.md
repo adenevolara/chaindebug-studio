@@ -1,10 +1,10 @@
 # 6-Week Technical Roadmap
 
-| Week | Focus                                 | Deliverables |
-|------|---------------------------------------|--------------|
-| 1    | Lite MVP + Testing                    | …            |
-| 2    | OSS Release & Polish Extras           | …            |
-| 3    | Documentation & Release Automation    | …            |
-| 4    | Pro Core: Hosting & Auth              | …            |
-| 5    | Collaboration, Billing & Integrations | …            |
-| 6    | CI/CD, QA & Public Launch             | …            |
+| Week | Focus                                | Deliverables                                                                                                                                                                                                                           |
+|----: |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | **Lite MVP + Testing**             | • `@chain_step` decorator + JSON tracing + pytest tests<br>• CLI: `chaindebug run` / `chaindebug view`<br>• Streamlit UI (flowchart, I/O inspector, 1-free “Why?”)<br>• CI gates: pytest, flake8, mypy<br>• Code coverage ≥ 80 %<br>• Smoke-test script (`scripts/smoke_test.sh`) |
+| **2** | **OSS Release & Polish Extras**    | • Publish `chain-debug-lite` to PyPI<br>• Finalize `Dockerfile` & `devcontainer.json`<br>• Sentry integration stub<br>• Performance benchmarks in `benchmarks/`<br>• README badges (CI, coverage, Docker pulls, PyPI version)<br>• Dependabot enabled<br>• Soft-launch OSS; collect feedback |
+| **3** | **Documentation & Release Automation** | • MkDocs site in `docs/` + `mkdocs.yml`<br>• GitHub Pages deploy workflow<br>• Release-notes GitHub Action (auto-draft from PRs)<br>• Dockerized “Try-It” playground image                                                           |
+| **4** | **Pro Core: Hosting & Auth**       | • FastAPI dashboard + Auth0 / GitHub-OAuth<br>• Trace storage (S3/Postgres) with 90-day retention<br>• Unlimited “Why?” behind Stripe-guarded \$15/user·mo plan<br>• Docker-based CD manifest                                         |
+| **5** | **Collaboration, Billing & Integrations** | • Team-sharing & inline comments UI<br>• Stripe Checkout & billing flow<br>• GitHub Action for PR auto-run<br>• Slack Bot integration<br>• Full VS Code extension                                                                    |
+| **6** | **CI/CD, QA & Public Launch**      | • Full CI/CD: Trivy, Bandit, pip-audit scans<br>• Run benchmarks in CI<br>• Sentry alerts live<br>• Final UX polish & marketing push (Hacker News, Reddit, Product Hunt)                                                               |
